@@ -74,7 +74,19 @@ console.log(filterPeople);
    email: 'chris@gmail.com'
  };
 
-// destructuring
+// DESTRUCTURING
+// pull out data from an object
+const profile = {
+  fname:'Joe Nel',
+  address: {
+    street: 'Velez',
+    city: 'CDO'
+  }
+}
+
+const {fname, address} = profile;
+const {street, city} = address
+
 
 // classes
 
