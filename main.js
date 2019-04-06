@@ -41,10 +41,20 @@ fruits.forEach((fruit, index) => {
 });
 
 // MAP
+// difference between foreach and map is it returns a value while foreach will just iterate
 const fruit = fruits.map(fruit => fruit.slice(0,-1).toUpperCase());
-console.log(fruit)
+console.log(fruit);
 
-// filter
+// FILTER
+// filters with certain condition
+const people = [
+  {id: 1, name: 'Foo Bar'},
+  {id: 2, name: 'John Doe'},
+  {id: 3, name: 'Joe Nel'},
+];
+
+const filterPeople = people.filter((person) => person.id !== 2);
+console.log(filterPeople);
 
 // spread
 
