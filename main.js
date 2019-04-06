@@ -20,7 +20,6 @@ num.push(5);
 
 
 // ARROW FUNCTION
-
 // this is a normal function
 function normalFunction() {
   console.log('this is a normal function')
@@ -36,8 +35,12 @@ const arrowFunction = () => { console.log('this is an arrow function from es6')}
 
 
 // FOREACH
+const fruits = ['Durian', 'Rambutan', 'Lomboy'];
+fruits.forEach((fruit, index) => {
+  console.log(index + ' : ' + fruit);
+});
 
-// map
+// MAP
 
 // filter
 
