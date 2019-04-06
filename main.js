@@ -35,12 +35,14 @@ const arrowFunction = () => { console.log('this is an arrow function from es6')}
 
 
 // FOREACH
-const fruits = ['Durian', 'Rambutan', 'Lomboy'];
+const fruits = ['Durians', 'Rambutans', 'Lomboys'];
 fruits.forEach((fruit, index) => {
   console.log(index + ' : ' + fruit);
 });
 
 // MAP
+const fruit = fruits.map(fruit => fruit.slice(0,-1).toUpperCase());
+console.log(fruit)
 
 // filter
 
