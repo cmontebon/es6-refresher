@@ -103,6 +103,28 @@ const newPerson = new Person('Johnny Sins', 33);
 console.log(newPerson.greet());
 
 
-// subclasses
+// SUBCLASSES
 
-// modules
+class Customer extends Person {
+  constructor(name, age, balance) {
+    super(name,age);
+    this.balance = balance;
+  }
+
+  check() {
+    return `${this.name}'s balance is $${this.balance}.00`;
+  }
+}
+
+const customer = new Customer('Chris', 15, 420);
+console.log(customer.check())
+
+// MODULES
+// export file1.js
+export const name1 = 'Bukaki';
+export const name2 = 'Covfefe';
+export default Person;
+
+// import file1.js in file2.js
+import { name1, name2 } from './file1.js';
+import Person from './file1.js';
