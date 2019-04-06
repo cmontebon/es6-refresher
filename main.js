@@ -56,7 +56,23 @@ const people = [
 const filterPeople = people.filter((person) => person.id !== 2);
 console.log(filterPeople);
 
-// spread
+// SPREAD
+/**
+ * a spread operator is three dots (...)
+ * copies a particular data
+ */
+ const arr1 = [1,2,3];
+ const arr2 = [...arr1.filter(num => num !==2 )];
+
+ const person1 = {
+   name: 'Chris',
+   age: 10
+ };
+
+ const person2 = {
+   ...person1,
+   email: 'chris@gmail.com'
+ };
 
 // destructuring
 
