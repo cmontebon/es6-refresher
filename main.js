@@ -87,8 +87,21 @@ const profile = {
 const {fname, address} = profile;
 const {street, city} = address
 
+// CLASSES
+class Person {
+  constructor(name,age) {
+    this.name = name;
+    this.age = age;
+  }
 
-// classes
+  greet() {
+    return `Aloha snackbar everyone! My name is ${this.name}, and I am ${this.  age}.`;
+  }
+}
+
+const newPerson = new Person('Johnny Sins', 33);
+console.log(newPerson.greet());
+
 
 // subclasses
 
